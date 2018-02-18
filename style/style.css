@@ -1,0 +1,150 @@
+/* RESET */
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* END */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url("https://images.pexels.com/photos/327308/pexels-photo-327308.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.tittle {
+	padding: 0 3vw;
+	color: #fff;
+	font-size: 5.5vh;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container {
+	min-height: 75vh;
+	min-width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container__content {
+	width: 100%;
+	margin: 0 3vw;
+}
+
+.container__content h2 {
+	margin: 1vh 0;
+	color: #fff;
+	font-size: 3vh;
+}
+
+.container__content span {
+	color: #ff0000;
+}
+
+.container__content input {
+	height: 5vh;
+	width: 84%;
+	padding: 2vh 1vw;
+	color: #000;
+	font-size: 2.5vh;
+}
+
+.container__button {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container__button--send {
+	margin: 0 3.3vw;
+	min-height: 6vh;
+	min-width: 7vw;
+	background-color: #ff0000;
+	color: #fff;
+	font-size: 3vh;
+	cursor: pointer;
+	border: 1vh solid #ff0000;
+	transition: all 0.7s;
+}
+
+.container__button--send:hover {
+	background-color: #fff;
+	color: #ff0000;
+	border: 0.1vh solid #fff;
+}
+
+footer {
+	margin: 0 1.5vw;
+	color: #fff;
+	font-size: 3vh;
+	text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+	.container {
+		min-width: 50vw;
+	}
+
+	.container__button--send {
+		margin: 0 5vw;
+	}
+}
+
+@media (max-width: 800px) {
+
+	.container {
+		min-width: 70vw;
+	}
+
+	.container__button--send {
+		margin: 0 8vw;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.container {
+		min-width: 85vw;
+	}
+
+	.container__button--send {
+		margin: 0 10.6vw;
+	}
+}
+
+@media (max-width: 400px) {
+	
+	.container {
+		min-width: 90vw;
+	}
+
+	.container__button--send {
+		margin: 0 12vw;
+	}
+}
